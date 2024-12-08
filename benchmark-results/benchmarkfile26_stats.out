@@ -1,0 +1,31 @@
+============================[ Problem Statistics ]=============================
+|                                                                             |
+|  Number of variables:       4842964                                         |
+|  Number of clauses:        12045456                                         |
+|  Parse time:                   2.53 s                                       |
+|  Eliminated clauses:         123.63 Mb                                      |
+|  Simplification time:         11.58 s                                       |
+|                                                                             |
+============================[ Search Statistics ]==============================
+| Conflicts |          ORIGINAL         |          LEARNT          | Progress |
+|           |    Vars  Clauses Literals |    Limit  Clauses Lit/Cl |          |
+===============================================================================
+|       100 |  495087  2354019  7472291 |   863140      100      4 | 15.931 % |
+|       250 |  495087  2354019  7472291 |   949454      250      5 | 15.931 % |
+|       475 |  495087  2354019  7472291 |  1044399      475      5 | 15.931 % |
+|       812 |  495087  2354019  7472291 |  1148839      812      5 | 15.931 % |
+|      1318 |  495087  2354019  7472291 |  1263723     1318      8 | 15.931 % |
+|      2077 |  495087  2354019  7472291 |  1390096     2077     12 | 15.931 % |
+|      3216 |  495087  2354019  7472291 |  1529105     3216     12 | 15.931 % |
+|      4924 |  495087  2354019  7472291 |  1682016     4924     11 | 15.931 % |
+===============================================================================
+restarts              : 30
+conflicts             : 6163           (183 /sec)
+decisions             : 7470746        (0.00 % random) (221647 /sec)
+propagations          : 137467352      (4078479 /sec)
+conflict literals     : 66409          (3.19 % deleted)
+Memory used           : 889.70 MB
+CPU time              : 33.7055 s
+
+SATISFIABLE
+File /Users/damy17/Documents/hw-uni/master-1-uvt/verificare-formala/benchmark/input-files/benchmarkfile26.cnf completed successfully.
