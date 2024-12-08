@@ -44,7 +44,7 @@
 - 07/12/2024 -> Daniel Dobrescu -> Creare fisier README si LICENSE  
 - 08/12/2024 -> Damian Grosu -> Urcare rezultate de la rularea benchmarkului familiei Miter (in fisierul benchmark-results)
 - 08/12/2024 -> Daniel Dobrescu -> Modificare fisier README
-
+- 08/12/2024 -> Scoropad Iulian -> Adaugare fisier "raport text", unde va fi localizat versiunea actualizată a textului si linkul catre proiectul overleaf. Analizare feedback de la versiunea draft, modificare text unde era necesar, modificare fisier README. P.S. Mai exista lucru la referințe în bibliografie.
 
 
 
