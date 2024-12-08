@@ -1,20 +1,24 @@
-**Proiect MiniSat**
+# Evaluarea MiniSat: Performanță și Provocări în Rezolvarea Problemelor SAT
 
-# Introducere
-  Acest proiect se concentrează pe utilizarea și analizarea modului de funcționare al solverului MiniSat, un program eficient pentru rezolvarea problemelor de satisfiabilitate booleeană (SAT). MiniSat este utilizat pentru a determina dacă există o asignare de valori adevărat/fals care face ca o formulă logică să fie satisfăcută.
+## Autorii : 
+- **Grosu Damian**
+- **Scoropad Iulian**
+- **Daniel Dobrescu**
+- **Anton Constantin-Adrian**
 
-# Descrierea problemei
-  Satisfiabilitatea booleeană (SAT) este o problemă fundamentală în domeniul informaticii, cu aplicații importante în verificarea modelelor, în bioinformatică și criptografie. Solverele SAT, precum MiniSat, sunt utilizate pentru a evalua dacă o formulă booleeană în formă normală conjunctivă (CNF) are o soluție.
-
-# Instalare MiniSat
-# Pe Windows
+  Raportul dat se concentrează pe analiza problemei satisfiabilității booleene (SAT), prima problemă recunoscută ca NP-completă, și pe aplicabilitatea acesteia în diverse domenii. Documentul prezintă în detaliu funcționarea și îmbunătățirile aduse MiniSat, un solver SAT minimalist și eficient,dezvoltat de Niklas Eén și Niklas Sörensson. Raportul include o descriere a structurilor și algoritmilor MiniSat, ghiduri pentru instalare, precum și metodologia utilizată pentru testarea performantelor acestuia.
+  Deasemenea MiniSat va fi  testat pe un set de benchmark-uri din competiția SAT 2024, analizănd performanța MiniSat în termeni de satisfiabilitate, relevând constrângerile de timp, hardware și discutând eficiența acestuia în diferite scenarii. Concluziile subliniază succesul în rezolvarea problemelor simple, dar și dificultățile întâlnite în cazuri complexe, oferind perspective asupra îmbunătățirilor viitoare.
+  Concluziile care le vom sublinia în urma realizării proiectului vor arăta atât succesul în rezolvarea problemelor simple, dar și dificultățile întâlnite în cazuri complexe, oferind perspective asupra îmbunătățirilor viitoare.
+  
+## Instalare MiniSat
+### Pe Windows
 1. Activează WSL:
     bash
     wsl --install
 2. Instalează o distribuție Linux (precum Ubuntu) din Microsoft Store.
 3. După instalare, deschide terminalul Linux și urmează pașii pentru Linux.
 
-# Pe Linux
+### Pe Linux
 1. Instalează compilatorul și uneltele de build:
     bash
     sudo apt install g++ make
@@ -27,7 +31,7 @@
     bash
     ./minisat
    
-# Pe macOS
+### Pe macOS
 1. Asigură-te că Homebrew este instalat:
     bash
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
@@ -35,24 +39,12 @@
     bash
     brew install minisat
    
-# Algoritmi 
-# Algoritmul DPLL
-# Algoritmul CDCL
+## Contribuțiile proprii
+- 17/11/2024 -> Damian Grosu -> Urcare cod MiniSat
+- 07/12/2024 -> Daniel Dobrescu -> Creare fisier README si LICENSE  
+- 08/12/2024 -> Damian Grosu -> Urcare rezultate de la rularea benchmarkului familiei Miter (in fisierul benchmark-results)
+- 08/12/2024 -> Daniel Dobrescu -> Modificare fisier README
 
-# Structura și modul de lucru al MiniSat pe scurt
-  MiniSat este un solver SAT eficient, implementat într-un program secvențial care urmează mai mulți pași pentru a rezolva formulele SAT. Acesta include inițializarea solverului, citirea fișierelor de intrare, propagarea unității, decizia asupra variabilelor, analiza conflictelor și învățarea clauzelor.
-Pașii executați în programul MiniSat:
-  1. **Inițializarea și setarea opțiunilor**: Configurarea solverului prin funcțiile `setUsageHelp` și `parseOptions`.
-  2. **Citirea și parsarea fișierului de intrare**: Citirea fișierului care conține formula logică, utilizând funcția `parse_DIMACS`.
-  3. **Propagarea unității și simplificarea**: Deducerea valorilor variabilelor și simplificarea clauzelor pentru optimizarea căutării.
-  4. **Decizia și crearea nivelelor de decizie**: Selectarea variabilelor pentru a explora soluțiile posibile.
-  5. **Detectarea și analiza conflictelor**: Analizarea conflictelor pentru a genera clauze învățate.
-  6. **Backtracking și restarturi**: Reîntoarcerea la nivele anterioare de decizie și aplicarea restarturilor pentru a îmbunătăți eficiența.
 
-# Contribuții
-- **Grosu Damian**: S-a ocupat de rularea benchmarkurilor și raportul în LaTeX.
-- **Scoropad Iulian**: S-a ocupat dee documentarea algoritmilor DPLL și CDCL.
-- **Daniel Dobrescu**: A explicat modul de funcționare al programului MiniSat.
-- **Anton Constantin-Adrian**: S-a ocupat de introducerea și descrierea problemei proiectului.
 
 
