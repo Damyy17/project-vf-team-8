@@ -4,7 +4,6 @@
 - **Grosu Damian**
 - **Scoropad Iulian**
 - **Daniel Dobrescu**
-- **Anton Constantin-Adrian**
 
   Raportul dat se concentrează pe analiza problemei satisfiabilității booleene (SAT), prima problemă recunoscută ca NP-completă, și pe aplicabilitatea acesteia în diverse domenii. Documentul prezintă în detaliu funcționarea și îmbunătățirile aduse MiniSat, un solver SAT minimalist și eficient,dezvoltat de Niklas Eén și Niklas Sörensson. Raportul include o descriere a structurilor și algoritmilor MiniSat, ghiduri pentru instalare, precum și metodologia utilizată pentru testarea performantelor acestuia.
   Deasemenea MiniSat va fi  testat pe un set de benchmark-uri din competiția SAT 2024, analizănd performanța MiniSat în termeni de satisfiabilitate, relevând constrângerile de timp, hardware și discutând eficiența acestuia în diferite scenarii. Concluziile subliniază succesul în rezolvarea problemelor simple, dar și dificultățile întâlnite în cazuri complexe, oferind perspective asupra îmbunătățirilor viitoare.
